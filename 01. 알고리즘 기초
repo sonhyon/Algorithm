@@ -99,3 +99,39 @@ elif n < 0:
     print('이 수는 음수입니다')
 else:
     print('이 수는 0입니다')
+
+#실습 1-4
+n = int(input('정수를 입력하세요: '))
+
+if n == 1:
+    print('A')
+elif n == 2:
+    print('B')
+else:
+    print('C')
+
+#실습 1-5
+n = int(input('정수를 입력하세요: '))
+
+if n == 1:
+    print('A')
+elif n == 2:
+    print('B')
+elif n == 3:
+    print('C')    #3을 넘어가면 아무것도 출력이 안됨
+
+#실습 1-6
+n = int(input('정수를 입력하세요: '))
+
+if n == 1:
+    print('A')
+elif n == 2:
+    print('B')
+elif n == 3:
+    print('C')
+else:
+    pass #else 문에서 pass 문은 아무 작업도 수행하지 않고 넘어갈 때 사용
+
+#보충수업 1-6
+a = x if x>y else y #조건식 x>y가 참이면 x, 거짓이면 y
+print('c는 0입니다' if c==0 else 'c는 0이 아닙니다')

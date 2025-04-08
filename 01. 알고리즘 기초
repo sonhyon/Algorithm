@@ -135,3 +135,32 @@ else:
 #보충수업 1-6
 a = x if x>y else y #조건식 x>y가 참이면 x, 거짓이면 y
 print('c는 0입니다' if c==0 else 'c는 0이 아닙니다')
+
+#실습 1-7
+#1부터 n까지 정수의 합 구하기 (while문)
+
+print('1부터 n까지 정수의 합을 구합니다')
+n = int(input('n값을 입력하세요: '))
+
+sum=0
+i=1
+
+while i <= n:
+    sum += i
+    i += 1
+
+print(f'1부터 {n}까지 정수의 합은 {sum}입니다')
+print(f'i값은 {i}입니다')
+
+#실습 1-8
+#1부터 n까지 정수의 합 구하기 (for문)
+
+print('1부터 n까지 정수의 합을 구합니다')
+n = int(input('n값을 입력하세요: '))
+
+sum=0
+for i in range(1, n+1): #1이상 n+1미만이 범위
+    sum += i
+
+print(f'1부터 {n}까지 정수의 합은 {sum}입니다')
+

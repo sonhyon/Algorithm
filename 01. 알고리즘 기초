@@ -41,13 +41,14 @@ def max3(a,b,c):
 
 print(f'max3(3,2,1) = {max3(3,2,1)}')
 
+
 #보충수업 1-4 복합문을 작성할 때 지켜야 할 규칙
 if a < b:
     print(min2 = a) #공백 4개로 들여쓰기를 해야 if절에 종속되어 실행됨
     print(max2 = b);
 
-#보충수업 1-5 세 정수의 대소 관계와 중앙값
 
+#보충수업 1-5 세 정수의 대소 관계와 중앙값
 #실습 1C-2
 def med3(a,b,c):
 
@@ -100,6 +101,7 @@ elif n < 0:
 else:
     print('이 수는 0입니다')
 
+
 #실습 1-4
 n = int(input('정수를 입력하세요: '))
 
@@ -110,6 +112,7 @@ elif n == 2:
 else:
     print('C')
 
+
 #실습 1-5
 n = int(input('정수를 입력하세요: '))
 
@@ -119,6 +122,7 @@ elif n == 2:
     print('B')
 elif n == 3:
     print('C')    #3을 넘어가면 아무것도 출력이 안됨
+
 
 #실습 1-6
 n = int(input('정수를 입력하세요: '))
@@ -132,9 +136,11 @@ elif n == 3:
 else:
     pass #else 문에서 pass 문은 아무 작업도 수행하지 않고 넘어갈 때 사용
 
+
 #보충수업 1-6
 a = x if x>y else y #조건식 x>y가 참이면 x, 거짓이면 y
 print('c는 0입니다' if c==0 else 'c는 0이 아닙니다')
+
 
 #실습 1-7
 #1부터 n까지 정수의 합 구하기 (while문)
@@ -152,9 +158,9 @@ while i <= n:
 print(f'1부터 {n}까지 정수의 합은 {sum}입니다')
 print(f'i값은 {i}입니다')
 
+
 #실습 1-8
 #1부터 n까지 정수의 합 구하기 (for문)
-
 print('1부터 n까지 정수의 합을 구합니다')
 n = int(input('n값을 입력하세요: '))
 
@@ -164,3 +170,17 @@ for i in range(1, n+1): #1이상 n+1미만이 범위
 
 print(f'1부터 {n}까지 정수의 합은 {sum}입니다')
 
+
+#a부터 b까지 정수의 합 구하기(for문)
+print('a부터 b까지 정수의 합을 구합니다.')
+a = int(input('정수a를 입력하세요: '))
+b = int(input('정수b를 입력하세요: '))
+
+if a>b:
+        a, b = b, a #조건 만족 시 a와 b값을 교환
+
+sum=0
+for i in range(a, b+1):
+    sum += i
+
+print(f'{a}부터 {b}까지 정수의 합은 {sum}입니다')
